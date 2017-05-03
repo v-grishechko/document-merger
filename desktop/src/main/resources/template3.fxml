@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="rootContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar prefHeight="29.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Файл">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Загрузить шаблон" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Помощь">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <ScrollPane layoutY="29.0" minWidth="-Infinity" prefHeight="309.0" prefWidth="600.0">
+         <content>
+            <Pane prefHeight="416.0" prefWidth="592.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="229.0" text="\${examinatorOneFullName}" />
+                  <TextField layoutX="278.0" layoutY="14.0" prefHeight="27.0" prefWidth="229.0" text="Богатко И. Н." />
+                  <Text layoutX="257.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                  <Text layoutX="258.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                  <TextField layoutX="279.0" layoutY="89.0" prefHeight="27.0" prefWidth="229.0" text="05.09.2017" />
+                  <TextField layoutX="15.0" layoutY="89.0" prefHeight="27.0" prefWidth="229.0" text="\${date}" />
+                  <TextField layoutX="15.0" layoutY="54.0" prefHeight="27.0" prefWidth="229.0" text="\${examinatorTwoFullName}" />
+                  <TextField layoutX="279.0" layoutY="54.0" prefHeight="27.0" prefWidth="229.0" text="Писарчук А. Ю." />
+                  <Text layoutX="258.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                  <Text layoutX="258.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                  <TextField layoutX="279.0" layoutY="236.0" prefHeight="27.0" prefWidth="229.0" text="405" />
+                  <TextField layoutX="15.0" layoutY="236.0" prefHeight="27.0" prefWidth="229.0" text="\${room}" />
+                  <TextField layoutX="15.0" layoutY="271.0" prefHeight="27.0" prefWidth="229.0" text="\${floor}" />
+                  <TextField layoutX="279.0" layoutY="271.0" prefHeight="27.0" prefWidth="229.0" text="3" />
+                  <Textm layoutX="258.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                  <Text layoutX="257.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                  <TextField layoutX="278.0" layoutY="127.0" prefHeight="27.0" prefWidth="229.0" text="Бланк ДП" />
+                  <TextField layoutX="14.0" layoutY="127.0" prefHeight="27.0" prefWidth="229.0" text="\${documentName}" />
+                  <Text layoutX="258.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                  <TextField layoutX="279.0" layoutY="199.0" prefHeight="27.0" prefWidth="229.0" text="Выберите значение..." />
+                  <TextField layoutX="15.0" layoutY="199.0" prefHeight="27.0" prefWidth="229.0" text="\${document}" />
+                  <TextField layoutX="15.0" layoutY="164.0" prefHeight="27.0" prefWidth="229.0" text="\${examinatorOneFullName}" />
+                  <TextField layoutX="279.0" layoutY="164.0" prefHeight="27.0" prefWidth="229.0" text="Выберите значение..." />
+                  <Text layoutX="258.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="345.0" layoutY="355.0" mnemonicParsing="false" text="Распечатать" />
+      <Button layoutX="460.0" layoutY="355.0" mnemonicParsing="false" text="Сохранить как..." />
+    </children>
+</Pane>
