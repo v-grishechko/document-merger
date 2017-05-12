@@ -12,14 +12,14 @@ import java.net.URL
 
 object TemplateParserTest : Spek({
 
-
     describe("a template parser") {
         val templateParser = TemplateParser()
 
-        val tokens = arrayListOf<Token>(Token("Смысл сайта"), Token("поможет"), Token("test"))
+        val tokens = arrayListOf<Token>(Token("\${Смысл сайта}"), Token("\${поможет}"), Token("\${test}"))
 
         it("should parse all expressions from .txt") {
             val expressions = templateParser.parse(Resources.readResourse("positive_template.txt"))
+
             for (token in expressions) {
                 tokens `should contain` token
             }

@@ -4,9 +4,9 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.documentmerger.desktop.screen.LoginScreenController">
+<BorderPane prefHeight="261.0" prefWidth="352.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.documentmerger.desktop.screen.LoginScreenController">
    <center>
-      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="101.0" minWidth="200.0" prefHeight="190.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="101.0" minWidth="175.0" prefHeight="115.0" prefWidth="175.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="loginButton" layoutX="108.0" layoutY="74.0" mnemonicParsing="false" onAction="#onLoginClick" text="Войти" />
             <TextField fx:id="loginField" promptText="Логин" />

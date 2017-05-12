@@ -23,6 +23,14 @@ junitPlatform {
     }
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'by.documentmerger.desktop.DocumentMergerApp'
+    }
+
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.apache.poi:poi:3.9"

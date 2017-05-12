@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="rootContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.documentmerger.desktop.screen.TokenValueScreenController">
+   <children>
+      <ScrollPane layoutY="116.0" prefHeight="251.0" prefWidth="600.0" />
+      <TextField fx:id="tokenValueView" layoutX="14.0" layoutY="36.0" prefHeight="27.0" prefWidth="350.0" promptText="Значение переменной" />
+      <Text fx:id="tokenNameView" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Variable" />
+      <ComboBox layoutX="14.0" layoutY="78.0" prefHeight="27.0" prefWidth="350.0" />
+      <Button layoutX="499.0" layoutY="381.0" mnemonicParsing="false" onAction="#onSaveClick" text="Сохранить" />
+   </children>
+</Pane>

@@ -14,4 +14,9 @@ object Resources {
         val fileUrl = Thread.currentThread().contextClassLoader.getResource(fileName)
         return File(fileUrl.toURI())
     }
+
+    fun createFile(fileName: String): File {
+        val dir = Thread.currentThread().contextClassLoader.
+        return File(dir.toString() + fileName)
+    }
 }
